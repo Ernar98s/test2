@@ -43,6 +43,7 @@ export default {
     this.$api.news.getNews(1).then((res) => {
       this.films = res.data.results;
       this.currentFilm = this.films[0];
+      this.showOverview(this.films[0]);
       document.body.style.backgroundImage = `url('${IMG_PATH}${this.currentFilm.backdrop_path}')`;
       this.loading = false;
     });

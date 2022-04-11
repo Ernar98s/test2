@@ -29,7 +29,6 @@ export default {
   },
   data() {
     return {
-      loading: false,
       filmData: [],
       path: IMG_PATH,
     };
